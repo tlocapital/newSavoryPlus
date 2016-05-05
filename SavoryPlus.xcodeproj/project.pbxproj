@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		475372081CD788F80065608B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475372071CD788F80065608B /* Constants.swift */; };
+		4753720A1CD79D980065608B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475372091CD79D980065608B /* LoginViewController.swift */; };
+		4753720D1CD854330065608B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753720C1CD854330065608B /* DataService.swift */; };
+		4753720F1CD864EE0065608B /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753720E1CD864EE0065608B /* NoteListViewController.swift */; };
+		475372111CD9CE1C0065608B /* NoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475372101CD9CE1C0065608B /* NoteData.swift */; };
+		475372131CD9DEC10065608B /* NoteListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475372121CD9DEC10065608B /* NoteListTableViewCell.swift */; };
+		475372151CD9EBBC0065608B /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475372141CD9EBBC0065608B /* NoteDetailViewController.swift */; };
 		5CFA1E01CD619DDAA23A6F51 /* Pods_SavoryPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2980B50720CC0D3C8B8EC5 /* Pods_SavoryPlus.framework */; };
 		9F2020961CD4A84D001FECD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2020951CD4A84D001FECD7 /* AppDelegate.swift */; };
 		9F20209B1CD4A84D001FECD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2020991CD4A84D001FECD7 /* Main.storyboard */; };
@@ -24,6 +31,13 @@
 
 /* Begin PBXFileReference section */
 		2288AF3046B4E06E150BDDE4 /* Pods-SavoryPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavoryPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-SavoryPlus/Pods-SavoryPlus.release.xcconfig"; sourceTree = "<group>"; };
+		475372071CD788F80065608B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		475372091CD79D980065608B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4753720C1CD854330065608B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4753720E1CD864EE0065608B /* NoteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		475372101CD9CE1C0065608B /* NoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteData.swift; sourceTree = "<group>"; };
+		475372121CD9DEC10065608B /* NoteListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListTableViewCell.swift; sourceTree = "<group>"; };
+		475372141CD9EBBC0065608B /* NoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		9F2020921CD4A84D001FECD7 /* SavoryPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavoryPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2020951CD4A84D001FECD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F20209A1CD4A84D001FECD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +68,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4753720B1CD79DA50065608B /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				475372091CD79D980065608B /* LoginViewController.swift */,
+				4753720E1CD864EE0065608B /* NoteListViewController.swift */,
+				475372121CD9DEC10065608B /* NoteListTableViewCell.swift */,
+				475372141CD9EBBC0065608B /* NoteDetailViewController.swift */,
+				475372101CD9CE1C0065608B /* NoteData.swift */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
 		65C07341E9EF14A1344F2FCE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,9 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				9F2020AA1CD4A85A001FECD7 /* Home */,
+				4753720B1CD79DA50065608B /* Note */,
 				9F2020B71CD4B2C9001FECD7 /* Recipe */,
 				9F2020B11CD4B125001FECD7 /* Setup */,
 				9F2020B61CD4B1E0001FECD7 /* Statics */,
+				4753720C1CD854330065608B /* DataService.swift */,
+				475372071CD788F80065608B /* Constants.swift */,
 			);
 			path = SavoryPlus;
 			sourceTree = "<group>";
@@ -264,14 +293,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475372111CD9CE1C0065608B /* NoteData.swift in Sources */,
 				9F2020961CD4A84D001FECD7 /* AppDelegate.swift in Sources */,
+				475372151CD9EBBC0065608B /* NoteDetailViewController.swift in Sources */,
 				9F2020C31CD4CD96001FECD7 /* RecipeDetailCollectionViewCell.swift in Sources */,
 				9F2020B91CD4B2F9001FECD7 /* RecipeListTableViewController.swift in Sources */,
 				9F2020C11CD4B914001FECD7 /* RecipeDetailViewController.swift in Sources */,
 				9F2020BB1CD4B39C001FECD7 /* RecipeData.swift in Sources */,
+				4753720D1CD854330065608B /* DataService.swift in Sources */,
 				9F2020BF1CD4B476001FECD7 /* RecipeListTableViewCell.swift in Sources */,
 				9F20209E1CD4A84D001FECD7 /* SavoryPlus.xcdatamodeld in Sources */,
+				4753720F1CD864EE0065608B /* NoteListViewController.swift in Sources */,
 				9F2020B51CD4B166001FECD7 /* SetupHomeViewController.swift in Sources */,
+				475372131CD9DEC10065608B /* NoteListTableViewCell.swift in Sources */,
+				4753720A1CD79D980065608B /* LoginViewController.swift in Sources */,
+				475372081CD788F80065608B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

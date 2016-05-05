@@ -12,6 +12,7 @@ class RecipeListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var imageFood: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

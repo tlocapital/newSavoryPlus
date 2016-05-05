@@ -8,5 +8,8 @@ target 'SavoryPlus' do
  pod ‘SwiftyJSON’
  pod ‘SDWebImage’
  pod ‘PKHUD’
+ pod 'FBSDKLoginKit'
+ pod 'FBSDKShareKit'
+ pod 'Firebase'
 end
 

@@ -85,12 +85,22 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-SavoryPlus/Alamofire.framework"
+  install_framework "Pods-SavoryPlus/Bolts.framework"
+  install_framework "Pods-SavoryPlus/FBSDKCoreKit.framework"
+  install_framework "Pods-SavoryPlus/FBSDKLoginKit.framework"
+  install_framework "Pods-SavoryPlus/FBSDKShareKit.framework"
+  install_framework "Pods-SavoryPlus/Firebase.framework"
   install_framework "Pods-SavoryPlus/PKHUD.framework"
   install_framework "Pods-SavoryPlus/SDWebImage.framework"
   install_framework "Pods-SavoryPlus/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-SavoryPlus/Alamofire.framework"
+  install_framework "Pods-SavoryPlus/Bolts.framework"
+  install_framework "Pods-SavoryPlus/FBSDKCoreKit.framework"
+  install_framework "Pods-SavoryPlus/FBSDKLoginKit.framework"
+  install_framework "Pods-SavoryPlus/FBSDKShareKit.framework"
+  install_framework "Pods-SavoryPlus/Firebase.framework"
   install_framework "Pods-SavoryPlus/PKHUD.framework"
   install_framework "Pods-SavoryPlus/SDWebImage.framework"
   install_framework "Pods-SavoryPlus/SwiftyJSON.framework"
