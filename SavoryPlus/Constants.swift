@@ -18,3 +18,19 @@ let SEGUE_EMAIL_LOG_IN = "EmailLogIn"
 
 //Status_Codes
 let STATUS_ACCOUNT_NONEXIST = -8
+
+func appendingArray (numbers : Int, unit : String) -> [String] {
+    var array = [String]()
+    for i in 0...numbers {
+        array.append("\(i) \(unit)")
+    }
+    return array
+}
+
+var hoursInpicker = appendingArray(24, unit: "小時")
+var minutesInpicker = appendingArray(60, unit: "分鐘")
+
+let thisPickerData = [
+    hoursInpicker,
+    minutesInpicker
+]

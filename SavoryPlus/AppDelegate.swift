@@ -16,12 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+//    static let makethisDelegate = AppDelegate ()
+    
+    func toggleRootView(storyboardName: String, viewControllerIdentifier: String) {
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        
+        let rootController = storyboard.instantiateViewControllerWithIdentifier(viewControllerIdentifier)
+        if self.window != nil {
+            self.window!.rootViewController = rootController
+        }
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         UITabBar.appearance().barTintColor = UIColor.darkGrayColor()
-        UINavigationBar.appearance().barTintColor = UIColor.orangeColor()
+        UINavigationBar.appearance().barTintColor = UIColor.init(red: 245/255, green: 166/255, blue: 35/255, alpha: 1)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        
+        //        self.toggleRootView("SetupLinks", viewControllerIdentifier: "StartsSetupHere")
+        
         
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }

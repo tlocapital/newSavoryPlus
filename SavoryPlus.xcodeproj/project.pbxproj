@@ -20,13 +20,21 @@
 		9F20209E1CD4A84D001FECD7 /* SavoryPlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F20209C1CD4A84D001FECD7 /* SavoryPlus.xcdatamodeld */; };
 		9F2020A01CD4A84D001FECD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F20209F1CD4A84D001FECD7 /* Assets.xcassets */; };
 		9F2020A31CD4A84D001FECD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2020A11CD4A84D001FECD7 /* LaunchScreen.storyboard */; };
-		9F2020B31CD4B151001FECD7 /* SetupLinks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2020B21CD4B151001FECD7 /* SetupLinks.storyboard */; };
-		9F2020B51CD4B166001FECD7 /* SetupHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2020B41CD4B166001FECD7 /* SetupHomeViewController.swift */; };
 		9F2020B91CD4B2F9001FECD7 /* RecipeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2020B81CD4B2F9001FECD7 /* RecipeListTableViewController.swift */; };
 		9F2020BB1CD4B39C001FECD7 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2020BA1CD4B39C001FECD7 /* RecipeData.swift */; };
 		9F2020BF1CD4B476001FECD7 /* RecipeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2020BE1CD4B476001FECD7 /* RecipeListTableViewCell.swift */; };
 		9F2020C11CD4B914001FECD7 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2020C01CD4B914001FECD7 /* RecipeDetailViewController.swift */; };
 		9F2020C31CD4CD96001FECD7 /* RecipeDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2020C21CD4CD96001FECD7 /* RecipeDetailCollectionViewCell.swift */; };
+		9FBD43911CDB39DB001FC012 /* SetupFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD43901CDB39DB001FC012 /* SetupFunctions.swift */; };
+		9FBD43941CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD43921CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.xib */; };
+		9FBD43951CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD43931CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.swift */; };
+		9FBD43981CDB3A24001FC012 /* WifiInputCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD43961CDB3A24001FC012 /* WifiInputCollectionViewCell.xib */; };
+		9FBD43991CDB3A24001FC012 /* WifiInputCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD43971CDB3A24001FC012 /* WifiInputCollectionViewCell.swift */; };
+		9FBD439C1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD439A1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.xib */; };
+		9FBD439D1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD439B1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.swift */; };
+		9FBD43A21CDB3C08001FC012 /* SetupHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD43A11CDB3C08001FC012 /* SetupHomeViewController.swift */; };
+		9FBD43A51CDCF750001FC012 /* CookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD43A41CDCF750001FC012 /* CookViewController.swift */; };
+		9FBD43A71CDCF853001FC012 /* SetupLinks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD43A61CDCF853001FC012 /* SetupLinks.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,13 +53,21 @@
 		9F20209F1CD4A84D001FECD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F2020A21CD4A84D001FECD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F2020A41CD4A84D001FECD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F2020B21CD4B151001FECD7 /* SetupLinks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetupLinks.storyboard; sourceTree = "<group>"; };
-		9F2020B41CD4B166001FECD7 /* SetupHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupHomeViewController.swift; sourceTree = "<group>"; };
 		9F2020B81CD4B2F9001FECD7 /* RecipeListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListTableViewController.swift; sourceTree = "<group>"; };
 		9F2020BA1CD4B39C001FECD7 /* RecipeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		9F2020BE1CD4B476001FECD7 /* RecipeListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListTableViewCell.swift; sourceTree = "<group>"; };
 		9F2020C01CD4B914001FECD7 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		9F2020C21CD4CD96001FECD7 /* RecipeDetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FBD43901CDB39DB001FC012 /* SetupFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupFunctions.swift; path = ../../SavoryPlus/SavoryPlus/SetupFunctions.swift; sourceTree = "<group>"; };
+		9FBD43921CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LinkToSavoryWifiCollectionViewCell.xib; path = ../../SavoryPlus/SavoryPlus/LinkToSavoryWifiCollectionViewCell.xib; sourceTree = "<group>"; };
+		9FBD43931CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkToSavoryWifiCollectionViewCell.swift; path = ../../SavoryPlus/SavoryPlus/LinkToSavoryWifiCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FBD43961CDB3A24001FC012 /* WifiInputCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WifiInputCollectionViewCell.xib; path = ../../SavoryPlus/SavoryPlus/WifiInputCollectionViewCell.xib; sourceTree = "<group>"; };
+		9FBD43971CDB3A24001FC012 /* WifiInputCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WifiInputCollectionViewCell.swift; path = ../../SavoryPlus/SavoryPlus/WifiInputCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FBD439A1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConnectionViaWifiCollectionViewCell.xib; path = ../../SavoryPlus/SavoryPlus/ConnectionViaWifiCollectionViewCell.xib; sourceTree = "<group>"; };
+		9FBD439B1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionViaWifiCollectionViewCell.swift; path = ../../SavoryPlus/SavoryPlus/ConnectionViaWifiCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FBD43A11CDB3C08001FC012 /* SetupHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupHomeViewController.swift; path = ../../SavoryPlus/SavoryPlus/SetupHomeViewController.swift; sourceTree = "<group>"; };
+		9FBD43A41CDCF750001FC012 /* CookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookViewController.swift; sourceTree = "<group>"; };
+		9FBD43A61CDCF853001FC012 /* SetupLinks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetupLinks.storyboard; sourceTree = "<group>"; };
 		A099B999308BEE576AA17362 /* Pods-SavoryPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavoryPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SavoryPlus/Pods-SavoryPlus.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2980B50720CC0D3C8B8EC5 /* Pods_SavoryPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavoryPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +129,7 @@
 				9F2020AA1CD4A85A001FECD7 /* Home */,
 				4753720B1CD79DA50065608B /* Note */,
 				9F2020B71CD4B2C9001FECD7 /* Recipe */,
+				9FBD43A31CDCF706001FC012 /* Cook */,
 				9F2020B11CD4B125001FECD7 /* Setup */,
 				9F2020B61CD4B1E0001FECD7 /* Statics */,
 				4753720C1CD854330065608B /* DataService.swift */,
@@ -133,8 +150,12 @@
 		9F2020B11CD4B125001FECD7 /* Setup */ = {
 			isa = PBXGroup;
 			children = (
-				9F2020B21CD4B151001FECD7 /* SetupLinks.storyboard */,
-				9F2020B41CD4B166001FECD7 /* SetupHomeViewController.swift */,
+				9FBD43A61CDCF853001FC012 /* SetupLinks.storyboard */,
+				9FBD43A11CDB3C08001FC012 /* SetupHomeViewController.swift */,
+				9FBD43901CDB39DB001FC012 /* SetupFunctions.swift */,
+				9FBD439E1CDB3A3C001FC012 /* LinkToSavoryWifiCollectionViewCell */,
+				9FBD439F1CDB3A49001FC012 /* WifiInputCollectionViewCell */,
+				9FBD43A01CDB3A5B001FC012 /* ConnectionViaWifiCollectionViewCell */,
 			);
 			name = Setup;
 			sourceTree = "<group>";
@@ -160,6 +181,41 @@
 				9F2020BA1CD4B39C001FECD7 /* RecipeData.swift */,
 			);
 			name = Recipe;
+			sourceTree = "<group>";
+		};
+		9FBD439E1CDB3A3C001FC012 /* LinkToSavoryWifiCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9FBD43921CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.xib */,
+				9FBD43931CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.swift */,
+			);
+			name = LinkToSavoryWifiCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9FBD439F1CDB3A49001FC012 /* WifiInputCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9FBD43961CDB3A24001FC012 /* WifiInputCollectionViewCell.xib */,
+				9FBD43971CDB3A24001FC012 /* WifiInputCollectionViewCell.swift */,
+			);
+			name = WifiInputCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9FBD43A01CDB3A5B001FC012 /* ConnectionViaWifiCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9FBD439A1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.xib */,
+				9FBD439B1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.swift */,
+			);
+			name = ConnectionViaWifiCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9FBD43A31CDCF706001FC012 /* Cook */ = {
+			isa = PBXGroup;
+			children = (
+				9FBD43A41CDCF750001FC012 /* CookViewController.swift */,
+			);
+			name = Cook;
 			sourceTree = "<group>";
 		};
 		AE389351FB403CE9474290D4 /* Frameworks */ = {
@@ -233,8 +289,11 @@
 			files = (
 				9F2020A31CD4A84D001FECD7 /* LaunchScreen.storyboard in Resources */,
 				9F2020A01CD4A84D001FECD7 /* Assets.xcassets in Resources */,
-				9F2020B31CD4B151001FECD7 /* SetupLinks.storyboard in Resources */,
+				9FBD43981CDB3A24001FC012 /* WifiInputCollectionViewCell.xib in Resources */,
+				9FBD439C1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.xib in Resources */,
 				9F20209B1CD4A84D001FECD7 /* Main.storyboard in Resources */,
+				9FBD43A71CDCF853001FC012 /* SetupLinks.storyboard in Resources */,
+				9FBD43941CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,17 +355,22 @@
 				475372111CD9CE1C0065608B /* NoteData.swift in Sources */,
 				9F2020961CD4A84D001FECD7 /* AppDelegate.swift in Sources */,
 				475372151CD9EBBC0065608B /* NoteDetailViewController.swift in Sources */,
+				9FBD439D1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.swift in Sources */,
 				9F2020C31CD4CD96001FECD7 /* RecipeDetailCollectionViewCell.swift in Sources */,
 				9F2020B91CD4B2F9001FECD7 /* RecipeListTableViewController.swift in Sources */,
+				9FBD43A51CDCF750001FC012 /* CookViewController.swift in Sources */,
 				9F2020C11CD4B914001FECD7 /* RecipeDetailViewController.swift in Sources */,
 				9F2020BB1CD4B39C001FECD7 /* RecipeData.swift in Sources */,
+				9FBD43951CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.swift in Sources */,
 				4753720D1CD854330065608B /* DataService.swift in Sources */,
 				9F2020BF1CD4B476001FECD7 /* RecipeListTableViewCell.swift in Sources */,
+				9FBD43911CDB39DB001FC012 /* SetupFunctions.swift in Sources */,
 				9F20209E1CD4A84D001FECD7 /* SavoryPlus.xcdatamodeld in Sources */,
 				4753720F1CD864EE0065608B /* NoteListViewController.swift in Sources */,
-				9F2020B51CD4B166001FECD7 /* SetupHomeViewController.swift in Sources */,
 				475372131CD9DEC10065608B /* NoteListTableViewCell.swift in Sources */,
 				4753720A1CD79D980065608B /* LoginViewController.swift in Sources */,
+				9FBD43A21CDB3C08001FC012 /* SetupHomeViewController.swift in Sources */,
+				9FBD43991CDB3A24001FC012 /* WifiInputCollectionViewCell.swift in Sources */,
 				475372081CD788F80065608B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

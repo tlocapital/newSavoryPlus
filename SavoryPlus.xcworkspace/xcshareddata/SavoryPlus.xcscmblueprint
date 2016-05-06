@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CA00951A91FAA9B7A42B38E0C47B6177732A3126+++E98910E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CA00951A91FAA9B7A42B38E0C47B6177732A3126+++9C14075" : 0,
+    "CA00951A91FAA9B7A42B38E0C47B6177732A3126+++CA1AA38" : 0,
+    "CA00951A91FAA9B7A42B38E0C47B6177732A3126+++E98910E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1B979095-8F71-46CF-85CA-035A46E7EF42",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CA00951A91FAA9B7A42B38E0C47B6177732A3126+++9C14075" : "SavoryPlus\/",
+    "CA00951A91FAA9B7A42B38E0C47B6177732A3126+++CA1AA38" : "SavoryPlus\/",
+    "CA00951A91FAA9B7A42B38E0C47B6177732A3126+++E98910E" : "splussplus\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SavoryPlus",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SavoryPlus.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/danadanad\/splus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CA00951A91FAA9B7A42B38E0C47B6177732A3126+++9C14075"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:tlocapital\/savoryPlus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CA00951A91FAA9B7A42B38E0C47B6177732A3126+++CA1AA38"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/danadanad\/splus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CA00951A91FAA9B7A42B38E0C47B6177732A3126+++E98910E"
+    }
+  ]
+}

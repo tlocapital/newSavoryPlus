@@ -6,10 +6,18 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--StartsSetupHere-->
+        <scene sceneID="YyR-wQ-i0I">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SetupLinks" referencedIdentifier="StartsSetupHere" id="Yoq-WE-mqT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t5Q-bg-JCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817.5" y="-949"/>
+        </scene>
+        <!--Cook View Controller-->
         <scene sceneID="XaX-j9-4PE">
             <objects>
-                <viewController id="kCQ-9B-tIy" sceneMemberID="viewController">
+                <viewController id="kCQ-9B-tIy" customClass="CookViewController" customModule="SavoryPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CeR-LR-exB"/>
                         <viewControllerLayoutGuide type="bottom" id="iaS-wL-Wia"/>
@@ -17,13 +25,66 @@
                     <view key="view" contentMode="scaleToFill" id="p7C-uB-c3g">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6d-iA-lEF">
+                                <rect key="frame" x="0.0" y="335" width="600" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="預計烹調" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xr-ii-YB2">
+                                <rect key="frame" x="266" y="306" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sLV-gR-she">
+                                <rect key="frame" x="30" y="192" width="540" height="31"/>
+                                <connections>
+                                    <action selector="sliderControl:" destination="kCQ-9B-tIy" eventType="valueChanged" id="C9Q-wL-ZVL"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="烹調溫度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcp-5v-wVf">
+                                <rect key="frame" x="266" y="155" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPb-2T-Lwy">
+                                <rect key="frame" x="504" y="100" width="60" height="30"/>
+                                <state key="normal" title="設定完成">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sLV-gR-she" firstAttribute="leading" secondItem="p7C-uB-c3g" secondAttribute="leading" constant="32" id="1Yt-tA-HnP"/>
+                            <constraint firstAttribute="trailing" secondItem="sLV-gR-she" secondAttribute="trailing" constant="32" id="Ftd-cd-Nhd"/>
+                            <constraint firstAttribute="trailing" secondItem="ZPb-2T-Lwy" secondAttribute="trailing" constant="36" id="L3j-WO-qQG"/>
+                            <constraint firstAttribute="trailing" secondItem="H6d-iA-lEF" secondAttribute="trailing" id="Ow0-Jj-kxf"/>
+                            <constraint firstItem="4xr-ii-YB2" firstAttribute="centerX" secondItem="p7C-uB-c3g" secondAttribute="centerX" id="PAH-kB-JFw"/>
+                            <constraint firstItem="Qcp-5v-wVf" firstAttribute="centerX" secondItem="p7C-uB-c3g" secondAttribute="centerX" id="PoA-Zf-g5d"/>
+                            <constraint firstItem="H6d-iA-lEF" firstAttribute="top" secondItem="4xr-ii-YB2" secondAttribute="bottom" constant="8" id="QtY-G8-ODG"/>
+                            <constraint firstItem="ZPb-2T-Lwy" firstAttribute="top" secondItem="CeR-LR-exB" secondAttribute="bottom" constant="36" id="TVt-M5-eVJ"/>
+                            <constraint firstItem="sLV-gR-she" firstAttribute="centerX" secondItem="p7C-uB-c3g" secondAttribute="centerX" id="dBM-Rn-bPv"/>
+                            <constraint firstItem="iaS-wL-Wia" firstAttribute="top" secondItem="H6d-iA-lEF" secondAttribute="bottom" id="mBZ-32-t0a"/>
+                            <constraint firstItem="4xr-ii-YB2" firstAttribute="top" secondItem="sLV-gR-she" secondAttribute="bottom" constant="84" id="n3e-wQ-teR"/>
+                            <constraint firstItem="sLV-gR-she" firstAttribute="top" secondItem="Qcp-5v-wVf" secondAttribute="bottom" constant="16" id="v2P-QI-NpI"/>
+                            <constraint firstItem="H6d-iA-lEF" firstAttribute="leading" secondItem="p7C-uB-c3g" secondAttribute="leading" id="zP6-8K-v3s"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aXX-70-Wzy">
                         <barButtonItem key="leftBarButtonItem" image="tool" id="d79-FW-PDW">
                             <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <connections>
+                                <segue destination="Yoq-WE-mqT" kind="show" id="x07-wh-Y8U"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="pickerOutlet" destination="H6d-iA-lEF" id="6uK-8u-NDY"/>
+                        <outlet property="sliderOutlet" destination="sLV-gR-she" id="xau-mu-QEh"/>
+                        <outlet property="tempLabel" destination="Qcp-5v-wVf" id="VF4-gE-l6A"/>
+                        <outlet property="timeLabel" destination="4xr-ii-YB2" id="Ke0-Of-OCK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Lc-HB-Em9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -32,7 +93,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="JKR-xx-Edg">
             <objects>
-                <tabBarController id="78X-65-djr" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainStory" id="78X-65-djr" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="lVt-eP-uXa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -55,7 +116,7 @@
                     <tabBarItem key="tabBarItem" title="Cook" image="cook" id="kqt-Cb-qCH">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="0.96078431369999995" green="0.65098039220000004" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
@@ -229,7 +290,7 @@
                     <tabBarItem key="tabBarItem" title="Recipe" image="recipe" id="giU-hT-eaA">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="0.96078431369999995" green="0.65098039220000004" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
@@ -602,7 +663,13 @@
         <scene sceneID="9QT-pn-g5O">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AXt-Qo-buq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="MyNote" id="qQ9-Ac-7mm"/>
+                    <tabBarItem key="tabBarItem" title="MyNote" image="note" id="qQ9-Ac-7mm">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.96078431369999995" green="0.65098039220000004" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gtb-Kx-xk3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -623,6 +690,7 @@
         <image name="icon_tag" width="50" height="50"/>
         <image name="icon_temperature" width="48" height="48"/>
         <image name="icon_timer" width="48" height="48"/>
+        <image name="note" width="25" height="23"/>
         <image name="recipe" width="21" height="25"/>
         <image name="tool" width="25" height="25"/>
     </resources>

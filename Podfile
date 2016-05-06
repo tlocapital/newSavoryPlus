@@ -11,5 +11,6 @@ target 'SavoryPlus' do
  pod 'FBSDKLoginKit'
  pod 'FBSDKShareKit'
  pod 'Firebase'
+ pod ‘CocoaAsyncSocket’
 end
 

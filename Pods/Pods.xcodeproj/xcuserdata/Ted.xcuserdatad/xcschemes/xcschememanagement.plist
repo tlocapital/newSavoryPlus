@@ -9,6 +9,36 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CocoaAsyncSocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Firebase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PKHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +62,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>17DF07DCC0FCA06AF0B416A0E4038632</key>
+		<key>09DA3298CDF707F90F675162673AB7E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79A2495E432297328AFF6E2DBF106B2A</key>
+		<key>0EB19C1377A747F81110D44E2D5FCF78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52D82BFDD1E808D9CB257431922C1EE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5D69761C2CD2A1E5C013537B29CAB4CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6A932845C7A5BE5374224A90EA874591</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6CD8B35D2A834E97C4418DCD85A0A27B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +97,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F6F0516F82D07656D12F1C0716898F73</key>
+		<key>9DB2F8E8C88669A94BFE30EEAE1FADE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FFC40C45177D3F6D08ACEBC02B85ACA0</key>
+		<key>B1D17BA74BEACBD28F897F231B5907A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B7AC9326D819482593FE118E915409D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6F0516F82D07656D12F1C0716898F73</key>
 		<dict>
 			<key>primary</key>
 			<true/>

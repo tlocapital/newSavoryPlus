@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1BA83B36C88AD5F097AEAAAF'
+               BlueprintIdentifier = 'A15BE2136C7E9D5C5115AC80'
                BlueprintName = 'Pods-SavoryPlus'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_SavoryPlus.framework'>
