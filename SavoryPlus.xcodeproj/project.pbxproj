@@ -35,6 +35,7 @@
 		9FBD43A21CDB3C08001FC012 /* SetupHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD43A11CDB3C08001FC012 /* SetupHomeViewController.swift */; };
 		9FBD43A51CDCF750001FC012 /* CookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD43A41CDCF750001FC012 /* CookViewController.swift */; };
 		9FBD43A71CDCF853001FC012 /* SetupLinks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD43A61CDCF853001FC012 /* SetupLinks.storyboard */; };
+		9FBD43A91CDD9E56001FC012 /* OnCookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD43A81CDD9E56001FC012 /* OnCookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		9FBD43A11CDB3C08001FC012 /* SetupHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupHomeViewController.swift; path = ../../SavoryPlus/SavoryPlus/SetupHomeViewController.swift; sourceTree = "<group>"; };
 		9FBD43A41CDCF750001FC012 /* CookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookViewController.swift; sourceTree = "<group>"; };
 		9FBD43A61CDCF853001FC012 /* SetupLinks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetupLinks.storyboard; sourceTree = "<group>"; };
+		9FBD43A81CDD9E56001FC012 /* OnCookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnCookViewController.swift; sourceTree = "<group>"; };
 		A099B999308BEE576AA17362 /* Pods-SavoryPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavoryPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SavoryPlus/Pods-SavoryPlus.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2980B50720CC0D3C8B8EC5 /* Pods_SavoryPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavoryPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				9FBD43A41CDCF750001FC012 /* CookViewController.swift */,
+				9FBD43A81CDD9E56001FC012 /* OnCookViewController.swift */,
 			);
 			name = Cook;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				9FBD43951CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.swift in Sources */,
 				4753720D1CD854330065608B /* DataService.swift in Sources */,
 				9F2020BF1CD4B476001FECD7 /* RecipeListTableViewCell.swift in Sources */,
+				9FBD43A91CDD9E56001FC012 /* OnCookViewController.swift in Sources */,
 				9FBD43911CDB39DB001FC012 /* SetupFunctions.swift in Sources */,
 				9F20209E1CD4A84D001FECD7 /* SavoryPlus.xcdatamodeld in Sources */,
 				4753720F1CD864EE0065608B /* NoteListViewController.swift in Sources */,

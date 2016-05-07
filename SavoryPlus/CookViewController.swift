@@ -61,14 +61,27 @@ class CookViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SetCook" {
+            let destController = segue.destinationViewController as! OnCookViewController
+          
+            destController.temperature = round((sliderOutlet.value)*10)/10
+            
+            destController.time = [thisPickerData[0][pickerOutlet.selectedRowInComponent(0)],thisPickerData[1][pickerOutlet.selectedRowInComponent(1)]]
+            
+
+            
+//            destController.tempFoodImageData = createFakeArrayData[indexPath.row].image
+            
+        }
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

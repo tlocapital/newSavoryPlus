@@ -52,6 +52,9 @@
                                 <state key="normal" title="設定完成">
                                     <color key="titleColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bu7-cy-xeA" kind="show" identifier="SetCook" id="Yeb-yL-dow"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,6 +92,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Lc-HB-Em9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031" y="-571"/>
+        </scene>
+        <!--On Cook View Controller-->
+        <scene sceneID="RSz-ix-uqp">
+            <objects>
+                <viewController id="bu7-cy-xeA" customClass="OnCookViewController" customModule="SavoryPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V9U-dX-0iw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lzl-hn-Hji"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hhe-QO-bPo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩餘時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-1V-YKn">
+                                <rect key="frame" x="266" y="289" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在溫度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txq-yl-Srp">
+                                <rect key="frame" x="266" y="222" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4ea-1V-YKn" firstAttribute="centerY" secondItem="hhe-QO-bPo" secondAttribute="centerY" id="WUU-k2-qKe"/>
+                            <constraint firstItem="4ea-1V-YKn" firstAttribute="centerX" secondItem="hhe-QO-bPo" secondAttribute="centerX" id="X7b-ya-5bA"/>
+                            <constraint firstItem="4ea-1V-YKn" firstAttribute="top" secondItem="Txq-yl-Srp" secondAttribute="bottom" constant="46" id="rYp-7Z-VvL"/>
+                            <constraint firstItem="Txq-yl-Srp" firstAttribute="centerX" secondItem="hhe-QO-bPo" secondAttribute="centerX" id="uBy-W0-CZj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tempLabel" destination="Txq-yl-Srp" id="6Nl-Lz-Wv2"/>
+                        <outlet property="timeLabel" destination="4ea-1V-YKn" id="CYB-fP-fFf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N5Z-ZX-2uj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="-571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JKR-xx-Edg">
