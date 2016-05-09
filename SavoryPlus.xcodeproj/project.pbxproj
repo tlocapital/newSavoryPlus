@@ -18,7 +18,6 @@
 		9F2020961CD4A84D001FECD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2020951CD4A84D001FECD7 /* AppDelegate.swift */; };
 		9F20209B1CD4A84D001FECD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2020991CD4A84D001FECD7 /* Main.storyboard */; };
 		9F20209E1CD4A84D001FECD7 /* SavoryPlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F20209C1CD4A84D001FECD7 /* SavoryPlus.xcdatamodeld */; };
-		9F2020A01CD4A84D001FECD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F20209F1CD4A84D001FECD7 /* Assets.xcassets */; };
 		9F2020A31CD4A84D001FECD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2020A11CD4A84D001FECD7 /* LaunchScreen.storyboard */; };
 		9F2020B91CD4B2F9001FECD7 /* RecipeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2020B81CD4B2F9001FECD7 /* RecipeListTableViewController.swift */; };
 		9F2020BB1CD4B39C001FECD7 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2020BA1CD4B39C001FECD7 /* RecipeData.swift */; };
@@ -36,6 +35,7 @@
 		9FBD43A51CDCF750001FC012 /* CookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD43A41CDCF750001FC012 /* CookViewController.swift */; };
 		9FBD43A71CDCF853001FC012 /* SetupLinks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBD43A61CDCF853001FC012 /* SetupLinks.storyboard */; };
 		9FBD43A91CDD9E56001FC012 /* OnCookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD43A81CDD9E56001FC012 /* OnCookViewController.swift */; };
+		9FCFEE4D1CE0BA8E00242AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCFEE4C1CE0BA8E00242AFE /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +51,6 @@
 		9F2020951CD4A84D001FECD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F20209A1CD4A84D001FECD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F20209D1CD4A84D001FECD7 /* SavoryPlus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SavoryPlus.xcdatamodel; sourceTree = "<group>"; };
-		9F20209F1CD4A84D001FECD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F2020A21CD4A84D001FECD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F2020A41CD4A84D001FECD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F2020B81CD4B2F9001FECD7 /* RecipeListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListTableViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		9FBD43A41CDCF750001FC012 /* CookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookViewController.swift; sourceTree = "<group>"; };
 		9FBD43A61CDCF853001FC012 /* SetupLinks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetupLinks.storyboard; sourceTree = "<group>"; };
 		9FBD43A81CDD9E56001FC012 /* OnCookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnCookViewController.swift; sourceTree = "<group>"; };
+		9FCFEE4C1CE0BA8E00242AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A099B999308BEE576AA17362 /* Pods-SavoryPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavoryPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SavoryPlus/Pods-SavoryPlus.debug.xcconfig"; sourceTree = "<group>"; };
 		FD2980B50720CC0D3C8B8EC5 /* Pods_SavoryPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavoryPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,8 +165,8 @@
 		9F2020B61CD4B1E0001FECD7 /* Statics */ = {
 			isa = PBXGroup;
 			children = (
-				9F20209F1CD4A84D001FECD7 /* Assets.xcassets */,
 				9F2020A11CD4A84D001FECD7 /* LaunchScreen.storyboard */,
+				9FCFEE4C1CE0BA8E00242AFE /* Assets.xcassets */,
 				9F20209C1CD4A84D001FECD7 /* SavoryPlus.xcdatamodeld */,
 				9F2020A41CD4A84D001FECD7 /* Info.plist */,
 			);
@@ -291,10 +291,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2020A31CD4A84D001FECD7 /* LaunchScreen.storyboard in Resources */,
-				9F2020A01CD4A84D001FECD7 /* Assets.xcassets in Resources */,
 				9FBD43981CDB3A24001FC012 /* WifiInputCollectionViewCell.xib in Resources */,
 				9FBD439C1CDB3A30001FC012 /* ConnectionViaWifiCollectionViewCell.xib in Resources */,
 				9F20209B1CD4A84D001FECD7 /* Main.storyboard in Resources */,
+				9FCFEE4D1CE0BA8E00242AFE /* Assets.xcassets in Resources */,
 				9FBD43A71CDCF853001FC012 /* SetupLinks.storyboard in Resources */,
 				9FBD43941CDB3A14001FC012 /* LinkToSavoryWifiCollectionViewCell.xib in Resources */,
 			);

@@ -17,6 +17,25 @@ class NoteDetailViewController: UIViewController {
     
     var note: NoteData!
     
+    // MARK: Here herererere
+    @IBAction func shareBut(sender: AnyObject) {
+        let textToShare = "Swift is awesome!  Check out this website about it!"
+        
+        if let myWebsite = NSURL(string: "http://www.codingexplorer.com/") {
+            let objectsToShare = [textToShare, myWebsite]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            
+            //New Excluded Activities Code
+            activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+            //
+            
+            self.presentViewController(activityVC, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func setBut(sender: AnyObject) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

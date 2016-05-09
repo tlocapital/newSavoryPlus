@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icon_temperature.png",
+      "filename" : "icon-temp.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "icon-temp@2x.png",
       "scale" : "2x"
     },
     {

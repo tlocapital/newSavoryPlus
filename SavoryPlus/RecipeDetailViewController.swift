@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class RecipeDetailViewController: UIViewController {
     
@@ -19,13 +21,24 @@ class RecipeDetailViewController: UIViewController {
     // Create a array of fake data from RecipeData.swift
     private var createFakeArrayData = RecipeData.createFakeDatas()
     private var cellIdentifier = "RecipeDetailCell"
-    var tempFoodImageData = ""
+    var recipeURL: String = ""
+    var tempRecipeData: JSON = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let width = (UIScreen.mainScreen().bounds.width - 10)
         self.collectVFLayout.itemSize = CGSize(width: width, height: width)
-        self.imageFood.image = UIImage(named: tempFoodImageData)
+//        self.imageFood.image = UIImage(named: tempFoodImageData)
+        
+//        Alamofire.request(.GET, "http://recipe.remindme.rocks/api/v1/recipes.json").response { resource in
+
+        
+
+//            self.numOfRows = self.courseJson!["syllabus"].count
+//            self.tableView.reloadData()
+//            print(self.numOfRows)
+        
+        
     }
     
 

@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Alamofire
 
 class RecipeDetailCollectionViewCell: UICollectionViewCell {
     
 
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
-
+    
     
     var recipeData: RecipeData! {
         didSet {

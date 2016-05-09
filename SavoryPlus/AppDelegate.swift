@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().barTintColor = UIColor.darkGrayColor()
         UINavigationBar.appearance().barTintColor = UIColor.init(red: 245/255, green: 166/255, blue: 35/255, alpha: 1)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
         
         //        self.toggleRootView("SetupLinks", viewControllerIdentifier: "StartsSetupHere")

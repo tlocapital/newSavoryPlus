@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class RecipeListTableViewController: UITableViewController {
     
     let cellIdentifier = "RecipeListTableCell"
     // Create a array of fake data from RecipeData.swift
     let createFakeArrayData = RecipeData.createFakeDatas()
+    let mainURL = "http://recipe.remindme.rocks/api/v1/recipes.json"
+    var thisJSON: JSON = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Alamofire.request(.GET, mainURL).responseJSON { response in
+            self.thisJSON = JSON(response.result.value!)
+            print(self.thisJSON.count)
+            self.tableView.reloadData()
+        }
         
         // Delete lines between UITableViewCells in UITableView
         // http://stackoverflow.com/questions/26653883/delete-lines-between-uitableviewcells-in-uitableview
@@ -32,15 +42,7 @@ class RecipeListTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "RecipeDetailViewController" {
-            if let indexPath = tableView.indexPathForSelectedRow {
-                let destController = segue.destinationViewController as! RecipeDetailViewController
-                destController.tempFoodImageData = createFakeArrayData[indexPath.row].image
-            }
-        }
-    }
+
     
     // MARK: - Table view data source
     
@@ -49,19 +51,38 @@ class RecipeListTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return self.thisJSON.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! RecipeListTableViewCell
         
         cell.imageFood.image = UIImage(named: createFakeArrayData[indexPath.row].image)
-        cell.labelTitle.text = createFakeArrayData[indexPath.row].title
+        cell.labelTitle.text = self.thisJSON[indexPath.row]["title"].stringValue
         
         return cell
     }
     
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "RecipeDetailViewController" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destController = segue.destinationViewController as! RecipeDetailViewController
+                let initIndexRef = mainURL.rangeOfString("http")?.startIndex
+                let endIndexRef = mainURL.rangeOfString("recipes")?.endIndex
+                print (initIndexRef)
+                print (endIndexRef)
+                let catchedURL = mainURL.substringFromIndex(initIndexRef!).substringToIndex(endIndexRef!)
+                print (catchedURL)
+                
+
+                let nextURL = "\(catchedURL)/\(thisJSON[indexPath.row]["id"]).json"
+                print (nextURL)
+                
+                destController.recipeURL = nextURL
+            }
+        }
+    }
     /*
      // Override to support conditional editing of the table view.
      override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

@@ -11,10 +11,10 @@ import UIKit
 class NoteListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var notes: [NoteData] = [
-        NoteData(title: "五分熟沙朗牛排", image: "beefsteak", tag: "牛肉 沙朗", temperature: "54.5", timer: "1:30"),
-        NoteData(title: "嫩煎羊小排", image: "lambcutlets", tag: "羊肉", temperature: "54.5", timer: "1:30"),
-        NoteData(title: "水波蛋佐燻鮭魚", image: "salmon", tag: "蛋 鮭魚", temperature: "54.5", timer: "1:30"),
-        NoteData(title: "五分熟沙朗牛排", image: "beefsteak", tag: "牛肉 沙朗", temperature: "54.5", timer: "1:30")
+        NoteData(title: "五分熟沙朗牛排", image: "beefsteak", tag: "牛肉 沙朗", temperature: "54.5", timer: "1:20"),
+        NoteData(title: "嫩煎羊小排", image: "lambcutlets", tag: "羊肉", temperature: "54.5", timer: "1:40"),
+        NoteData(title: "水波蛋佐燻鮭魚", image: "salmon", tag: "蛋 鮭魚", temperature: "54.5", timer: "0:30"),
+        NoteData(title: "五分熟沙朗牛排", image: "beefsteak", tag: "牛肉 沙朗", temperature: "54.5", timer: "1:50")
     ]
     var indexPath: Int = 0
     
