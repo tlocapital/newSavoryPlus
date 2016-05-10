@@ -15,34 +15,32 @@ class NoteDetailViewController: UIViewController {
     @IBOutlet weak var labelTag: UILabel!
     @IBOutlet weak var imageFood: UIImageView!
     
-    var note: NoteData!
+    var note: [NoteData] = []
+    var tagtag: Int = 0
     
     // MARK: Here herererere
     @IBAction func shareBut(sender: AnyObject) {
-        let textToShare = "Swift is awesome!  Check out this website about it!"
-        
-        if let myWebsite = NSURL(string: "http://www.codingexplorer.com/") {
-            let objectsToShare = [textToShare, myWebsite]
-            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-            
-            //New Excluded Activities Code
-            activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
-            //
-            
-            self.presentViewController(activityVC, animated: true, completion: nil)
+
+        let defaultText = "This looks good !"
+        if let imageToShare = UIImage(named: self.note[tagtag].image) {
+            let activityController = UIActivityViewController(activityItems: [defaultText, imageToShare], applicationActivities: nil)
+            self.presentViewController(activityController, animated: true, completion: nil)
         }
+
+        
     }
     
     @IBAction func setBut(sender: AnyObject) {
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.imageFood.image = UIImage(named: note.image)
-        self.labelTemporature.text = note.temperature
-        self.labelTimer.text = note.timer
-        self.labelTag.text = note.tag
+        self.imageFood.image = UIImage(named: self.note[tagtag].image)
+        self.labelTemporature.text = self.note[tagtag].temperature
+        self.labelTimer.text = self.note[tagtag].timer
+        self.labelTag.text = self.note[tagtag].tag
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,14 +49,19 @@ class NoteDetailViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "setTempTime" {
+            let destinationController = segue.destinationViewController as! OnCookViewController
+            destinationController.timeMinute = Int(note[tagtag].timer)!
+            destinationController.temperature = Float(note[tagtag].temperature)!
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

@@ -12,6 +12,7 @@ class OnCookViewController: UIViewController {
 
     @IBOutlet weak var tempLabel: UILabel!
     
+    @IBOutlet weak var secondaryView: UIView!
     @IBOutlet weak var timeLabel: UILabel!
     var temperature: Float = 0
     var timeHour: Int = 0
@@ -19,6 +20,21 @@ class OnCookViewController: UIViewController {
     var timeSecond: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        while timeMinute > 60 {
+            timeMinute -= 60
+            timeHour += 1
+        }
+        
+        secondaryView.layer.cornerRadius = 20
+        secondaryView.layer.masksToBounds = true
+        
+        secondaryView.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        secondaryView.layer.shadowOpacity = 0.5
+        secondaryView.layer.shadowRadius = 10
+        secondaryView.layer.shadowOffset = CGSizeZero
+        secondaryView.layer.masksToBounds = false
+        
+        
         NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(OnCookViewController.countDown), userInfo: nil, repeats: true)
         tempLabel.text = "烹飪溫度 " + String(temperature) + " 度"
         timeLabel.text = " 剩餘時間 : \(timeHour) 小時 \(timeMinute) 分鐘"

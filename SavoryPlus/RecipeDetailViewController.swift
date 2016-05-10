@@ -77,8 +77,12 @@ extension RecipeDetailViewController: UICollectionViewDataSource {
             case 0:
                 cell.labelTitle.text = tempRecipeData["recipe"]["title"].stringValue
                 cell.labelDescription.text = tempRecipeData["recipe"]["content"].stringValue
+                cell.labelTime.text = tempRecipeData["recipe"]["time"].stringValue
+                cell.labelTemp.text = ""
             case 1:
                 cell.labelTitle.text = "食材"
+                cell.labelTemp.text = ""
+                cell.labelTime.text = ""
                 let ingredientsCount = tempRecipeData["ingredients"].count
                 let ingredientsAll = printCountedData(ingredientsCount)
                 cell.labelDescription.text = ingredientsAll
@@ -86,6 +90,17 @@ extension RecipeDetailViewController: UICollectionViewDataSource {
 //                let stepCount = self.tempRecipeData["steps"].count
                 cell.labelTitle.text = "步驟 " + tempRecipeData["steps"][indexPath.row-2]["step_title"].stringValue
                 cell.labelDescription.text = tempRecipeData["steps"][indexPath.row-2]["description"].stringValue
+                if tempRecipeData["steps"][indexPath.row-2]["time"] == 0 {
+                    cell.labelTime.text = ""
+                } else {
+                    cell.labelTime.text = "時間: " + tempRecipeData["steps"][indexPath.row-2]["time"].stringValue + " 分鐘"
+                }
+                
+                if tempRecipeData["steps"][indexPath.row-2]["temperature"] == 0 {
+                    cell.labelTemp.text = ""
+                } else {
+                    cell.labelTemp.text = "溫度: " + tempRecipeData["steps"][indexPath.row-2]["temperature"].stringValue + " 度"
+                }
             }
         return cell
     }

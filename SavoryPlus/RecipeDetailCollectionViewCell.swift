@@ -15,7 +15,9 @@ class RecipeDetailCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     
+    @IBOutlet weak var labelTemp: UILabel!
     
+    @IBOutlet weak var labelTime: UILabel!
 
     
 }

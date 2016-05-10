@@ -10,13 +10,14 @@ import UIKit
 
 class NoteListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var thisTableView: UITableView!
     var notes: [NoteData] = [
-        NoteData(title: "五分熟沙朗牛排", image: "beefsteak", tag: "牛肉 沙朗", temperature: "54.5", timer: "1:20"),
-        NoteData(title: "嫩煎羊小排", image: "lambcutlets", tag: "羊肉", temperature: "54.5", timer: "1:40"),
-        NoteData(title: "水波蛋佐燻鮭魚", image: "salmon", tag: "蛋 鮭魚", temperature: "54.5", timer: "0:30"),
-        NoteData(title: "五分熟沙朗牛排", image: "beefsteak", tag: "牛肉 沙朗", temperature: "54.5", timer: "1:50")
+        NoteData(title: "五分熟沙朗牛排", image: "beefsteak", tag: "牛肉 沙朗", temperature: "58.5", timer: "80"),
+        NoteData(title: "嫩煎羊小排", image: "lambcutlets", tag: "羊肉", temperature: "52.5", timer: "100"),
+        NoteData(title: "水波蛋佐燻鮭魚", image: "salmon", tag: "蛋 鮭魚", temperature: "48.5", timer: "30"),
+        NoteData(title: "五分熟沙朗牛排", image: "beefsteak", tag: "牛肉 沙朗", temperature: "54", timer: "110")
     ]
-    var indexPath: Int = 0
+    var indexPatha: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,15 +53,24 @@ class NoteListViewController: UIViewController, UITableViewDelegate, UITableView
         cell.labelTag.text = notes[indexPath.row].tag
         cell.labelTemporature.text = notes[indexPath.row].temperature
         cell.labelTimer.text = notes[indexPath.row].timer
-        self.indexPath = indexPath.row
+        self.indexPatha = indexPath.row
         
         return cell
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "NoteDetailViewController" {
-            let destinationController = segue.destinationViewController as! NoteDetailViewController
-            destinationController.note = notes[indexPath]
+            //            let destinationController = segue.destinationViewController as! NoteDetailViewController
+            //            destinationController.note = notes
+            //            destinationController.tagtag = indexPatha
+            //        }
+            
+            if let indexPath = thisTableView.indexPathForSelectedRow {
+                let destinationController = segue.destinationViewController as! NoteDetailViewController
+                destinationController.note = notes
+                destinationController.tagtag = indexPath.row
+                
+            }
         }
     }
     

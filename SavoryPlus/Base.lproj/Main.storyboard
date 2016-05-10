@@ -105,9 +105,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2oI-L1-6ko">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2oI-L1-6ko">
                                 <rect key="frame" x="32" y="160" width="536" height="280"/>
-                                <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.98218803746319594" green="1" blue="0.89823055989287259" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="1dt-OG-TKn"/>
                                 </constraints>
@@ -115,17 +115,17 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩餘時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-1V-YKn">
                                 <rect key="frame" x="260" y="288" width="80" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="烹飪溫度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txq-yl-Srp">
                                 <rect key="frame" x="260" y="218" width="80" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.98218803746319594" green="1" blue="0.89823055989287259" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4ea-1V-YKn" firstAttribute="centerY" secondItem="hhe-QO-bPo" secondAttribute="centerY" id="WUU-k2-qKe"/>
                             <constraint firstItem="4ea-1V-YKn" firstAttribute="centerX" secondItem="hhe-QO-bPo" secondAttribute="centerX" id="X7b-ya-5bA"/>
@@ -138,6 +138,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="secondaryView" destination="2oI-L1-6ko" id="jrh-p7-ITZ"/>
                         <outlet property="tempLabel" destination="Txq-yl-Srp" id="6Nl-Lz-Wv2"/>
                         <outlet property="timeLabel" destination="4ea-1V-YKn" id="CYB-fP-fFf"/>
                     </connections>
@@ -315,8 +316,20 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQU-Qa-air">
-                                                    <rect key="frame" x="8" y="44" width="264" height="21"/>
+                                                    <rect key="frame" x="8" y="68" width="264" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vd-ko-mec">
+                                                    <rect key="frame" x="244" y="44" width="28" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="溫度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTR-GI-Ikl">
+                                                    <rect key="frame" x="208" y="44" width="28" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -326,12 +339,18 @@
                                             <constraint firstAttribute="trailing" secondItem="77T-ox-QSQ" secondAttribute="trailing" id="Dyk-ai-Zdy"/>
                                             <constraint firstAttribute="trailing" secondItem="SQU-Qa-air" secondAttribute="trailing" constant="8" id="Iyp-7G-wqI"/>
                                             <constraint firstItem="77T-ox-QSQ" firstAttribute="top" secondItem="sSd-Qk-faT" secondAttribute="top" constant="8" id="M0I-yc-HU7"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Vd-ko-mec" secondAttribute="trailing" constant="8" id="PMr-la-Z1E"/>
                                             <constraint firstItem="SQU-Qa-air" firstAttribute="leading" secondItem="sSd-Qk-faT" secondAttribute="leading" constant="8" id="Uh3-Ce-sA3"/>
                                             <constraint firstItem="77T-ox-QSQ" firstAttribute="leading" secondItem="sSd-Qk-faT" secondAttribute="leading" id="Ydh-H5-N2h"/>
-                                            <constraint firstItem="SQU-Qa-air" firstAttribute="top" secondItem="77T-ox-QSQ" secondAttribute="bottom" constant="8" id="bau-qf-1Kr"/>
+                                            <constraint firstItem="SQU-Qa-air" firstAttribute="top" secondItem="77T-ox-QSQ" secondAttribute="bottom" constant="32" id="bau-qf-1Kr"/>
+                                            <constraint firstItem="YTR-GI-Ikl" firstAttribute="centerY" secondItem="1Vd-ko-mec" secondAttribute="centerY" id="bdy-i1-GXB"/>
+                                            <constraint firstItem="1Vd-ko-mec" firstAttribute="leading" secondItem="YTR-GI-Ikl" secondAttribute="trailing" constant="8" id="nlu-9y-1vy"/>
+                                            <constraint firstItem="1Vd-ko-mec" firstAttribute="top" secondItem="77T-ox-QSQ" secondAttribute="bottom" constant="8" id="s7s-nH-yd7"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="labelDescription" destination="SQU-Qa-air" id="slZ-Dr-jNn"/>
+                                            <outlet property="labelTemp" destination="YTR-GI-Ikl" id="2S9-b1-Ny6"/>
+                                            <outlet property="labelTime" destination="1Vd-ko-mec" id="90h-jW-BlO"/>
                                             <outlet property="labelTitle" destination="77T-ox-QSQ" id="GG5-6Z-iHg"/>
                                         </connections>
                                     </collectionViewCell>
@@ -614,6 +633,9 @@
                             <constraint firstItem="ttI-wZ-OV9" firstAttribute="top" secondItem="o0P-q1-8lM" secondAttribute="bottom" id="lmb-Og-hNe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="thisTableView" destination="o0P-q1-8lM" id="5QQ-ya-c6F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOb-3L-cDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -679,6 +701,7 @@
                                 </state>
                                 <connections>
                                     <action selector="setBut:" destination="HnZ-hr-TUW" eventType="touchUpInside" id="VJe-RX-8KR"/>
+                                    <segue destination="bu7-cy-xeA" kind="show" identifier="setTempTime" id="kZZ-yJ-NiE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHx-Zu-xZJ">
@@ -797,6 +820,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="RUy-HY-pzv"/>
-        <segue reference="4JV-ux-LuE"/>
+        <segue reference="x07-wh-Y8U"/>
+        <segue reference="Yeb-yL-dow"/>
     </inferredMetricsTieBreakers>
 </document>
