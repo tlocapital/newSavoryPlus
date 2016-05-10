@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SDWebImage
 
 class RecipeListTableViewController: UITableViewController {
     
@@ -56,8 +57,10 @@ class RecipeListTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! RecipeListTableViewCell
-        
-        cell.imageFood.image = UIImage(named: createFakeArrayData[indexPath.row].image)
+        let imageURL = self.thisJSON[indexPath.row]["recipe_image_url"].stringValue
+        print(imageURL)
+        let imageSDURL = NSURL(string: imageURL)
+        cell.imageFood.sd_setImageWithURL(imageSDURL)
         cell.labelTitle.text = self.thisJSON[indexPath.row]["title"].stringValue
         
         return cell

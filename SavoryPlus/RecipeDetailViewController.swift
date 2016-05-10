@@ -79,6 +79,11 @@ extension RecipeDetailViewController: UICollectionViewDataSource {
                 cell.labelDescription.text = tempRecipeData["recipe"]["content"].stringValue
                 cell.labelTime.text = tempRecipeData["recipe"]["time"].stringValue
                 cell.labelTemp.text = ""
+                let imageURL = self.tempRecipeData["recipe"]["recipe_image_url"].stringValue
+                let imageSDURL = NSURL(string: imageURL)
+                self.imageFood.sd_setImageWithURL(imageSDURL)
+ 
+                
             case 1:
                 cell.labelTitle.text = "食材"
                 cell.labelTemp.text = ""
@@ -86,17 +91,23 @@ extension RecipeDetailViewController: UICollectionViewDataSource {
                 let ingredientsCount = tempRecipeData["ingredients"].count
                 let ingredientsAll = printCountedData(ingredientsCount)
                 cell.labelDescription.text = ingredientsAll
+                let imageURL = self.tempRecipeData["recipe"]["recipe_image_url"].stringValue
+                let imageSDURL = NSURL(string: imageURL)
+                self.imageFood.sd_setImageWithURL(imageSDURL)
             default:
 //                let stepCount = self.tempRecipeData["steps"].count
-                cell.labelTitle.text = "步驟 " + tempRecipeData["steps"][indexPath.row-2]["step_title"].stringValue
+                cell.labelTitle.text = tempRecipeData["steps"][indexPath.row-2]["step_title"].stringValue
                 cell.labelDescription.text = tempRecipeData["steps"][indexPath.row-2]["description"].stringValue
-                if tempRecipeData["steps"][indexPath.row-2]["time"] == 0 {
-                    cell.labelTime.text = ""
+                let imageURL = self.tempRecipeData["steps"][indexPath.row-2]["step_image_url"].stringValue
+                let imageSDURL = NSURL(string: imageURL)
+                self.imageFood.sd_setImageWithURL(imageSDURL)
+                if tempRecipeData["steps"][indexPath.row-2]["time"] == "" {
+                    cell.labelTime.text = nil
                 } else {
                     cell.labelTime.text = "時間: " + tempRecipeData["steps"][indexPath.row-2]["time"].stringValue + " 分鐘"
                 }
                 
-                if tempRecipeData["steps"][indexPath.row-2]["temperature"] == 0 {
+                if tempRecipeData["steps"][indexPath.row-2]["temperature"] == nil {
                     cell.labelTemp.text = ""
                 } else {
                     cell.labelTemp.text = "溫度: " + tempRecipeData["steps"][indexPath.row-2]["temperature"].stringValue + " 度"
