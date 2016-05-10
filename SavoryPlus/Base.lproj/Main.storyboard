@@ -730,7 +730,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wdp-gM-qbo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wdp-gM-qbo">
                                 <rect key="frame" x="0.0" y="291" width="600" height="260"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdX-gV-m5E">
@@ -740,6 +740,17 @@
                                 </state>
                                 <connections>
                                     <action selector="shareBut:" destination="HnZ-hr-TUW" eventType="touchUpInside" id="dIs-hw-mNf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yba-JN-I0b">
+                                <rect key="frame" x="544" y="304" width="42" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Retake">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="retakePhoto:" destination="HnZ-hr-TUW" eventType="touchUpInside" id="bd8-qT-lQe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -765,18 +776,27 @@
                             <constraint firstAttribute="trailingMargin" secondItem="wdp-gM-qbo" secondAttribute="trailing" constant="-20" id="bTg-jT-rBe"/>
                             <constraint firstItem="vJP-ZI-WH4" firstAttribute="leading" secondItem="QxQ-W8-qdJ" secondAttribute="trailing" constant="8" id="ffF-3z-1gc"/>
                             <constraint firstItem="4Uy-nO-COc" firstAttribute="leading" secondItem="cp9-an-aPu" secondAttribute="leadingMargin" id="gF9-bt-Zy8"/>
+                            <constraint firstItem="yba-JN-I0b" firstAttribute="top" secondItem="vJP-ZI-WH4" secondAttribute="bottom" constant="2" id="gtM-2n-aGE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fHx-Zu-xZJ" secondAttribute="trailing" constant="8" id="hFl-Sa-CdV"/>
                             <constraint firstItem="6a5-TA-y1c" firstAttribute="leading" secondItem="ijg-az-2kw" secondAttribute="trailing" constant="8" id="kNJ-B6-8Ie"/>
                             <constraint firstItem="QxQ-W8-qdJ" firstAttribute="leading" secondItem="6a5-TA-y1c" secondAttribute="trailing" constant="8" id="oR1-R1-h6S"/>
                             <constraint firstItem="NTO-ia-Z5x" firstAttribute="leading" secondItem="cp9-an-aPu" secondAttribute="leadingMargin" id="pJP-2n-v2d"/>
+                            <constraint firstItem="yba-JN-I0b" firstAttribute="centerX" secondItem="vJP-ZI-WH4" secondAttribute="centerX" id="qDU-GN-gYf"/>
                             <constraint firstItem="vJP-ZI-WH4" firstAttribute="trailing" secondItem="cp9-an-aPu" secondAttribute="trailingMargin" id="tmH-9z-Y11"/>
+                            <constraint firstItem="wdp-gM-qbo" firstAttribute="top" secondItem="yba-JN-I0b" secondAttribute="bottom" constant="-41" id="tpa-Qk-L0U"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gtM-2n-aGE"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="imageFood" destination="wdp-gM-qbo" id="WQU-4a-yXF"/>
                         <outlet property="labelTag" destination="fHx-Zu-xZJ" id="D0e-Ks-srz"/>
                         <outlet property="labelTemporature" destination="ijg-az-2kw" id="vX5-1J-Qiq"/>
                         <outlet property="labelTimer" destination="QxQ-W8-qdJ" id="8kZ-K7-8vE"/>
+                        <outlet property="retakeButOut" destination="yba-JN-I0b" id="oHq-fa-IMr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIq-Yr-hc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -820,7 +840,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="RUy-HY-pzv"/>
+        <segue reference="kZZ-yJ-NiE"/>
         <segue reference="4JV-ux-LuE"/>
-        <segue reference="Yeb-yL-dow"/>
     </inferredMetricsTieBreakers>
 </document>
