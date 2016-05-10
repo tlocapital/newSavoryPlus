@@ -16,15 +16,6 @@ class RecipeDetailCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelDescription: UILabel!
     
     
-    var recipeData: RecipeData! {
-        didSet {
-            updateUI()
-        }
-    }
-    
-    func updateUI() {
-        self.labelTitle.text = recipeData.title
-        self.labelDescription.text = recipeData.description
-    }
+
     
 }

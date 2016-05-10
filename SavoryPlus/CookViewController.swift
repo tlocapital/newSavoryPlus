@@ -20,7 +20,6 @@ class CookViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         let useThisColor = UIColor.init(red: (countingColor+30)/255, green: (166+countingColor/4)/255, blue: (35+countingColor/3)/255, alpha: 1)
         sliderOutlet.minimumTrackTintColor = useThisColor
         sliderOutlet.thumbTintColor = useThisColor
-        
     }
     
     
@@ -64,7 +63,6 @@ class CookViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         pickerLabel!.attributedText = myTitle
         pickerLabel!.textAlignment = .Center
         return pickerLabel
-        
     }
     
  
@@ -95,14 +93,9 @@ class CookViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SetCook" {
             let destController = segue.destinationViewController as! OnCookViewController
-          
             destController.temperature = round((sliderOutlet.value)*10)/10
-            
             destController.timeHour = pickerOutlet.selectedRowInComponent(0)
             destController.timeMinute = pickerOutlet.selectedRowInComponent(1)
-            
-
-            
 //            destController.tempFoodImageData = createFakeArrayData[indexPath.row].image
             
         }

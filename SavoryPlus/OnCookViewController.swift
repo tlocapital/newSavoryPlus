@@ -20,7 +20,7 @@ class OnCookViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(OnCookViewController.countDown), userInfo: nil, repeats: true)
-        tempLabel.text = "現在溫度 " + String(temperature) + " 度"
+        tempLabel.text = "烹飪溫度 " + String(temperature) + " 度"
         timeLabel.text = " 剩餘時間 : \(timeHour) 小時 \(timeMinute) 分鐘"
         // Do any additional setup after loading the view.
     }
